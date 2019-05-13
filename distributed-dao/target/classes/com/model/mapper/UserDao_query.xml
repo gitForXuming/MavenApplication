@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.db.UserDao"><!-- 此处的namespace必须和要注入的dao类名相似 -->
+	<!-- 查询记录 -->
+	<select id="queryUserByName" parameterType="com.model.VO.UserInfoVO" resultType="com.model.VO.UserInfoVO">
+		select t_id as id, t_username as username , t_password as password ,description as description from userinfo where t_username = #{username} limit 1
+	</select>
+
+	<select id="queryAllUsers"  parameterType="com.model.VO.UserInfoVO" resultType="com.model.VO.UserInfoVO">
+		select t_id as id, t_username as username , t_password as password ,description as description from userinfo
+		WHERE 1=1
+		<choose>
+			<when test=' null!=username and  username !=""  ' >
+				AND t_username = #{username}
+			</when>
+		</choose>
+	</select>
+</mapper>

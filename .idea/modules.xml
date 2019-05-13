@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/distributed-common/distributed-common.iml" filepath="$PROJECT_DIR$/distributed-common/distributed-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributed-dao/distributed-dao.iml" filepath="$PROJECT_DIR$/distributed-dao/distributed-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributed-mq/distributed-mq.iml" filepath="$PROJECT_DIR$/distributed-mq/distributed-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributed-service/distributed-service.iml" filepath="$PROJECT_DIR$/distributed-service/distributed-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributed-util/distributed-util.iml" filepath="$PROJECT_DIR$/distributed-util/distributed-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributed-web/distributed-web.iml" filepath="$PROJECT_DIR$/distributed-web/distributed-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/distributedProject.iml" filepath="$PROJECT_DIR$/distributedProject.iml" />
+    </modules>
+  </component>
+</project>
